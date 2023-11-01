@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5482448687061123665}
   - component: {fileID: 8372423046979021021}
   - component: {fileID: -3081119523456554122}
+  - component: {fileID: 8985304538048995548}
   m_Layer: 0
   m_Name: Jug
   m_TagString: Untagged
@@ -117,6 +118,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09f6ec236da9d444196b3548d9f9f797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: 28326d101123ad549a06ad8ca9dfeafd, type: 2}
+--- !u!114 &8985304538048995548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275043120392070020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75f76c0ab23ad644a20016e29d29ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: 28326d101123ad549a06ad8ca9dfeafd, type: 2}
