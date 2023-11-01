@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 7778109363197392539}
   - component: {fileID: 5482448687061123665}
   - component: {fileID: 8372423046979021021}
-  - component: {fileID: 8724116551229531484}
-  - component: {fileID: -5970772919495562513}
+  - component: {fileID: -3081119523456554122}
   m_Layer: 0
   m_Name: Jug
   m_TagString: Untagged
@@ -108,7 +107,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5360547440341672820, guid: 0a2618eaf865fb249b3ac4d9a5790629, type: 3}
---- !u!114 &8724116551229531484
+--- !u!114 &-3081119523456554122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,20 +116,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6275043120392070020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec7311a07606a944b20df94b3a29420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 28326d101123ad549a06ad8ca9dfeafd, type: 2}
---- !u!114 &-5970772919495562513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275043120392070020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e75f76c0ab23ad644a20016e29d29ad5, type: 3}
+  m_Script: {fileID: 11500000, guid: 09f6ec236da9d444196b3548d9f9f797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: 28326d101123ad549a06ad8ca9dfeafd, type: 2}
