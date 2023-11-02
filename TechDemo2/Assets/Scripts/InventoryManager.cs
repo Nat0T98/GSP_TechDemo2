@@ -45,7 +45,7 @@ public class InventoryManager : MonoBehaviour
             itemIcon.sprite = item.icon;
 
             if(EnableRemove.isOn)
-                removeButton.gameObject.SetActive(false);
+                removeButton.gameObject.SetActive(true);
         }
         SetInventoryItems();
     }
