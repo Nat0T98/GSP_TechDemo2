@@ -3,17 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class KeypadController : MonoBehaviour
+public class KeypadControl : MonoBehaviour
 {
-    public DoorController door;
+    public DoorControl door;
     public string password;
     public int passwordLimit;
-    public Text passwordText;
-
-    [Header("Audio")]
-    public AudioSource audioSource;
-    public AudioClip correctSound;
-    public AudioClip wrongSound;
+    public Text passwordText;    
 
     private void Start()
     {
@@ -52,17 +47,17 @@ public class KeypadController : MonoBehaviour
         {
             door.lockedByPassword = false;
 
-            if (audioSource != null)
+           /* if (audioSource != null)
                 audioSource.PlayOneShot(correctSound);
-
+*/
             passwordText.color = Color.green;
             StartCoroutine(waitAndClear());
         }
         else
         {
-            if (audioSource != null)
+            /*if (audioSource != null)
                 audioSource.PlayOneShot(wrongSound);
-
+*/
             passwordText.color = Color.red;
             StartCoroutine(waitAndClear());
         }
@@ -73,6 +68,4 @@ public class KeypadController : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
         Clear();
     }
-
-
 }

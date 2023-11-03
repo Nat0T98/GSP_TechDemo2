@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class KeypadKey : MonoBehaviour
 {
-    public string key;
-    
+    public string key;    
     public void SendKey()
     {
-        this.transform.GetComponentInParent<KeypadController>().PasswordEntry(key);
+        this.transform.GetComponentInParent<KeypadControl>().PasswordEntry(key);
     }
 
 }

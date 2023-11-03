@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+
 public class PlayerAim : MonoBehaviour
 {
     public Transform headPos;
@@ -19,15 +20,9 @@ public class PlayerAim : MonoBehaviour
                 }
                 else if (hit.transform.name == "DoorMesh")
                 {
-                    hit.transform.GetComponent<DoorController>().OpenClose();
+                    hit.transform.GetComponent<DoorControl>().OpenClose();
                 }
             }
-
-
-
-
-
-
 
             /*RaycastHit hit;
             if (Physics.Raycast(headPos.position, headPos.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))

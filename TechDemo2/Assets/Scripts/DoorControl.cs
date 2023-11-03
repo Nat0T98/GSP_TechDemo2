@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorController : MonoBehaviour
+public class DoorControl : MonoBehaviour
 {
     public bool lockedByPassword;
 
