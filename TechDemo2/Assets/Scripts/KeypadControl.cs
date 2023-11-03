@@ -15,9 +15,7 @@ public class KeypadControl : MonoBehaviour
     {
         doorLocked = true;
         passwordText.text = "";
-    }
-
-   
+    } 
 
     public void PasswordEntry(string number)
     {
@@ -54,18 +52,15 @@ public class KeypadControl : MonoBehaviour
             AudioManager.Manager.PlaySFX("KeypadCorrect");
             passwordText.color = Color.green;
             DoorOpen();
-            StartCoroutine(waitAndClear());
-            
+            StartCoroutine(waitAndClear());            
         }
         else
         {
             AudioManager.Manager.PlaySFX("KeypadWrong");
             passwordText.color = Color.red;
             StartCoroutine(waitAndClear());
-
         }
     }
-
     IEnumerator waitAndClear()
     {
         yield return new WaitForSeconds(0.75f);

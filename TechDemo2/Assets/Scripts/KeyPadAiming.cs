@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 
-public class PlayerAim : MonoBehaviour
+public class KeyPadAiming : MonoBehaviour
 {
     public Transform headPos;
 
