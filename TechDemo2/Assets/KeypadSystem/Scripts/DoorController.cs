@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public bool isLockedByPassword;
+    public bool lockedByPassword;
 
     public Animator anim;
 
     public void OpenClose()
     {
-        if (isLockedByPassword)
+        if (lockedByPassword)
         {
             Debug.Log("Locked by password");
             return;
         }
 
-        anim.SetTrigger("DoorOpen");
+        anim.SetTrigger("Door");
     }
 
 }

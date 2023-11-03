@@ -50,7 +50,7 @@ public class KeypadController : MonoBehaviour
     {
         if (passwordText.text == password)
         {
-            door.isLockedByPassword = false;
+            door.lockedByPassword = false;
 
             if (audioSource != null)
                 audioSource.PlayOneShot(correctSound);

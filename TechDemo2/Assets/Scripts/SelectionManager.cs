@@ -37,3 +37,20 @@ public class SelectionManager : MonoBehaviour
         }
     }
 }
+
+/*Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+RaycastHit hit;
+if (Physics.Raycast(ray, out hit))
+{
+    if (Input.GetMouseButtonDown(0))
+    {
+        if (hit.transform.GetComponent<KeypadKey>() != null)
+        {
+            hit.transform.GetComponent<KeypadKey>().SendKey();
+        }
+        else if (hit.transform.name == "DoorMesh")
+        {
+            hit.transform.GetComponent<DoorController>().OpenClose();
+        }
+    }
+          */
