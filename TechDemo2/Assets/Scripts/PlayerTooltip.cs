@@ -13,7 +13,7 @@ public class PlayerTooltip : MonoBehaviour
         ToolTipMessage.SetActive(false);
     }
 
-    void Update()
+    /*void Update()
     {
         if (activeToolTip)
         {
@@ -22,26 +22,22 @@ public class PlayerTooltip : MonoBehaviour
                 activeToolTip.ToggleToolTip();
             }
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider Col)
     {
-        if (Col.gameObject.tag == "Useable")
+        if (Col.gameObject.tag == "ToolTip")
         {
-            Col.gameObject.TryGetComponent(out activeToolTip);
+            
             ToolTipMessage.SetActive(true);
         }
     }
 
     private void OnTriggerExit(Collider Col)
     {
-        if (Col.gameObject.tag == "Useable")
+        if (Col.gameObject.tag == "ToolTip")
         {
-            if (activeToolTip.GetToolTipStatus())
-            {
-                activeToolTip.ToggleToolTip();
-            }
-            activeToolTip = null;
+            
             ToolTipMessage.SetActive(false);
         }
     }
