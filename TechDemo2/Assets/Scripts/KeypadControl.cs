@@ -5,15 +5,19 @@ using UnityEngine.UI;
 
 public class KeypadControl : MonoBehaviour
 {
-    public DoorControl door;
     public string password;
     public int passwordLimit;
-    public Text passwordText;    
+    public Text passwordText;
+    public Animator anim;
+    public bool doorLocked;
 
     private void Start()
     {
+        doorLocked = true;
         passwordText.text = "";
     }
+
+   
 
     public void PasswordEntry(string number)
     {
@@ -45,21 +49,20 @@ public class KeypadControl : MonoBehaviour
     {
         if (passwordText.text == password)
         {
-            door.lockedByPassword = false;
+            doorLocked = false;
 
-           /* if (audioSource != null)
-                audioSource.PlayOneShot(correctSound);
-*/
+            AudioManager.Manager.PlaySFX("KeypadCorrect");
             passwordText.color = Color.green;
+            DoorOpen();
             StartCoroutine(waitAndClear());
+            
         }
         else
         {
-            /*if (audioSource != null)
-                audioSource.PlayOneShot(wrongSound);
-*/
+            AudioManager.Manager.PlaySFX("KeypadWrong");
             passwordText.color = Color.red;
             StartCoroutine(waitAndClear());
+
         }
     }
 
@@ -67,5 +70,11 @@ public class KeypadControl : MonoBehaviour
     {
         yield return new WaitForSeconds(0.75f);
         Clear();
+    }
+
+    public void DoorOpen()
+    {
+        Vector3 newPos = new Vector3(0, 270, 0);
+        gameObject.transform.position = newPos;
     }
 }

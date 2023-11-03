@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1101274777}
-  password: 1234
+  password: 1532
   passwordLimit: 4
   passwordText: {fileID: 1228763558}
 --- !u!1 &171807133
@@ -2102,7 +2102,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sounds:
   - Name: VoiceOver
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 526bc39f35c3a2046b2fc972f462490c, type: 3}
+    volume: 1
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - Name: KeypadCorrect
+    clip: {fileID: 8300000, guid: df8192caa86428d45b137483bfb4c468, type: 3}
+    volume: 1
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - Name: KeypadWrong
+    clip: {fileID: 8300000, guid: ef86d1476812b9b459b31db8e268cc07, type: 3}
     volume: 1
     pitch: 1
     Loop: 0
@@ -3867,7 +3879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockedByPassword: 1
-  anim: {fileID: 0}
+  anim: {fileID: 1101274770}
 --- !u!1001 &1102738854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4777,6 +4789,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4773151655948132754, guid: a8ee8a0a877c4e64fa1915f8445c3110, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5956455058962496819, guid: a8ee8a0a877c4e64fa1915f8445c3110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.632824
